@@ -61,6 +61,9 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.0.0"
   },
+  "publishConfig": {
+    "access": "restricted"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5"
