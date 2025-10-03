@@ -4,10 +4,10 @@
   "description": "React + MUI component library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "webpack --mode=production",
@@ -28,7 +28,9 @@
   "author": "proounce",
   "license": "MIT",
   "peerDependencies": {
+    "@mui/icons-material": "^5.15.18",
     "@mui/material": "5.15.18",
+    "@types/react": "^18.2.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -39,6 +41,7 @@
     "@babel/preset-env": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+    "@types/node": "^16.18.126",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.3.0",
     "concurrently": "^6.2.1",
